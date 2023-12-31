@@ -10,7 +10,7 @@ cleanup/delete bad sub-exposures that you didn't end up using in Siril.
 ## Usage
 
 ```sh
-./disabled_seq_imgs.py -s path/to/seq_file.seq -c path/to/conversions_file.txt
+./tools/disabled_seq_imgs.py -s path/to/seq_file.seq -c path/to/conversions_file.txt
 ```
 
 You can delete the returned images if you wish with:
@@ -33,4 +33,7 @@ Example conversion file `light_conversions.txt`:
 '/path/to/IMG_3215.CR2' -> '../process/light_00002.fit'
 '/path/to/IMG_3216.CR2' -> '../process/light_00003.fit'
 ```
+
+Using these two files would return `/path/to/IMG_3214.CR2` since the corresponding `.fit` file is
+disabled in the Siril sequence.
 

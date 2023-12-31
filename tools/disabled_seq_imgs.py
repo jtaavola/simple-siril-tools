@@ -24,7 +24,7 @@ def parse_seq_map(seq_file_path: str):
 
     will return `{'1': False, '2': True, '3': True}`
 
-    Arguments:
+    Parameters:
     seq_file_path -- the path to the seq file Siril
     """
 
@@ -57,7 +57,7 @@ def parse_conversion_map(conversion_file_path: str):
     will return
     `{'1': '/path/to/IMG_3214.CR2', '2': '/path/to/IMG_3214.CR2', '3': '/path/to/IMG_3214.CR2'}`
 
-    Arguments:
+    Parameters:
     conversion_file_path -- the path to the Siril img conversion file
     """
 
@@ -85,7 +85,7 @@ def get_disabled_seq_imgs(seq_file_path: str, conversion_file_path: str):
     Returns a list of file paths, representing the input imgs that are disabled in the provided
     Siril sequence.
 
-    Arguments:
+    Parameters:
     seq_file_path -- the path to the seq file Siril
     conversion_file_path -- the path to the Siril img conversion file
     """
