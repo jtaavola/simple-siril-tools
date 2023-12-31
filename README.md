@@ -15,7 +15,7 @@ cleanup/delete bad sub-exposures that you didn't end up using in Siril.
 
 You can delete the returned images if you wish with:
 ```sh
-./disabled_seq_imgs.py -s path/to/seq_file.seq -c path/to/conversions_file.txt | xargs rm
+./tools/disabled_seq_imgs.py -s path/to/seq_file.seq -c path/to/conversions_file.txt | xargs rm
 ```
 
 ### Example files
